@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
-              <Link to="/" className="nav-links" onClick={closeMenu}>
+              <Link to="/home" className="nav-links" onClick={closeMenu}>
                 Home
               </Link>
             </li>
