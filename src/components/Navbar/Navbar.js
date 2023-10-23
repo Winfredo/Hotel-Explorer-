@@ -37,17 +37,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="nav-links" onClick={closeMenu}>
+              <Link to="/services" className="nav-links" onClick={closeMenu}>
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/" className="nav-links" onClick={closeMenu}>
+              <Link to="/help" className="nav-links" onClick={closeMenu}>
                 Help
               </Link>
             </li>
             <li>
-              <Link to="/" className="nav-links" onClick={closeMenu}>
+              <Link to="/contact" className="nav-links" onClick={closeMenu}>
                 Contact
               </Link>
             </li>
