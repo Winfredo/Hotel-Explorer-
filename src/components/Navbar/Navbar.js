@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { FaTimes } from "react-icons/fa";
 import { GiAbstract010 } from "react-icons/gi";
+import {Link} from "react-router-dom";
+import {Button} from "../Button/Button";
+import './Navbar.css';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -11,51 +13,83 @@ const Navbar = () => {
     setClick(!click);
   };
 
-  const closeMenu = () => {
+  const closeMobileMenu = () => {
     setClick(false);
   };
+
+  const [button, setButton] = useState(true)
+
+  const showButton = () =>{
+    if (window.innerWidth <= 960){
+      setButton(false);
+    }else{
+      setButton(true) 
+    }
+  }
+
+  useEffect (
+    () =>{
+      showButton()
+    }, []
+  )
+
+  window.addEventListener("resize",showButton)
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            WINFRED <GiAbstract010 />
+          <Link  to={"./"} 
+          className="navbar-logo"
+          onClick={closeMobileMenu}>
+            WINFRED <GiAbstract010 /> 
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <>
-              <IoIosMenu />
-            </>
 
-            {/* its not working whyy */}
-            <p className={click ? <FaTimes /> : <IoIosMenu />}></p>
-          </div>
+          <Link to={" "} className="menu-icon" onClick={handleClick}>
+            <>{click ? <FaTimes /> : <IoIosMenu />}</>
+          </Link> 
+         
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
-              <Link to="/home" className="nav-links" onClick={closeMenu}>
-                Home
+            <li className='nav-item'>
+              <Link to={"./home"} 
+              className="nav-links" 
+              onClick={closeMobileMenu}>
+                Home tygfg
               </Link>
-            </li>
-            <li>
-              <Link to="/services" className="nav-links" onClick={closeMenu}>
+             </li>
+            <li className='nav-item'>
+              <Link to={"./services"} 
+              className="nav-links" 
+              onClick={closeMobileMenu}>
                 Services
               </Link>
             </li>
-            <li>
-              <Link to="/help" className="nav-links" onClick={closeMenu}>
-                Help
+            <li className='nav-item'>
+              <Link to={"./products"} 
+              className="nav-links" 
+              onClick={closeMobileMenu}>
+                Products
               </Link>
             </li>
+          
             <li>
-              <Link to="/contact" className="nav-links" onClick={closeMenu}>
-                Contact
+              <Link
+                to='/'
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Sign Up 
               </Link>
             </li>
+
           </ul>
-        </div>
+          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+         </div>
       </nav>
     </>
   );
 };
 
 export default Navbar;
+
+
