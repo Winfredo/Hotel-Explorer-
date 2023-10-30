@@ -1,12 +1,10 @@
 
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import './App.css';
 import React from 'react';
 // eslint-disable-next-line
-import * as ReactDOM from "react-dom/client";
-// eslint-disable-next-line
-import { router } from './utils';
+import * as ReactDOM from "react-dom/client";  
+import HeroSection from "./components/HeroSection/HeroSection";
 
 
 
@@ -16,6 +14,7 @@ function App() {
 
    <div>
   <Navbar />
+  <HeroSection />
    </div>
   );    
 
