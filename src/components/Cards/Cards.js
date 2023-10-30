@@ -2,54 +2,51 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "../CardItem";
 
-const Cards = () => {
+function Cards() {
   return (
-    <div className="cards">
-      <h1>Check Out these EPIC Destinations.</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+    <div className='cards'>
+      <h1>Check out these EPIC Destinations!</h1>
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
             <CardItem
-              src="pictures/img-9.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Adventure"
-              path="/adventure"
+              src='pictures/img-9.jpg'
+              text='Explore the  waterfall deep inside the Amazon Jungle'
+              label='Adventure'
+              path='/Adventure'
             />
-
             <CardItem
-              src="pictures/img-2.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Luxury "
-              path="/services"
+              src='pictures/img-2.jpg'
+              text='Travel through the Islands of Bali in a Private Cruise'
+              label='Luxury'
+              path='/services'
             />
           </ul>
-          <ul className="cards__items">
+          <ul className='cards__items'>
             <CardItem
-              src="pictures/img-4.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Mystery"
-              path="/mystery"
+              src='pictures/img-4.jpg'
+              text='Experience Football on Top of the Himilayan Mountains'
+              label='Mystery'
+              path='/mystery'
+              
             />
-
             <CardItem
-              src="pictures/img-3.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Sign In "
-              path="/sign-up"
+              src='pictures/img-3.jpg'
+              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              label='Sign In'
+              path='/sign-up'
             />
-
-<CardItem
-              src="pictures/img-5.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Products "
-              path="/products"
+            <CardItem
+              src='pictures/img-5.jpg'
+              text='Discover captivating products that redefine excellence.'
+              label='Products'
+              path='/products'
             />
           </ul>
-
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Cards;

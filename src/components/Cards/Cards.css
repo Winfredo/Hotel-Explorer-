@@ -20,6 +20,7 @@ h1 {
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
+  height: 100%;
   width: 90%;
   margin: 0 auto;
 }
