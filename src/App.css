@@ -8,7 +8,9 @@
   .home,
   .services,
   .products,
-  .sign-up {
+  .sign-up,
+  .adventure,
+  .mystery {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -49,4 +51,24 @@
     padding-bottom: 200px;
   }
 
+  .adventure{
+    background-image: url('../public/pictures/img-9.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    padding-bottom: 200px;
+  }
+.mystery{
+  background-image: url('../public/pictures/img-4.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+  padding-bottom: 200px;
+}
  

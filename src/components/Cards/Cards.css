@@ -11,7 +11,9 @@
 
 h1 {
   text-align: center;
+  font-size: 2.6rem;
 }
+
 
 .cards__container {
   display: flex;
