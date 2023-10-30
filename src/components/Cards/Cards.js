@@ -27,7 +27,7 @@ const Cards = () => {
             <CardItem
               src="pictures/img-4.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Adventure"
+              label="Mystery"
               path="/services"
             />
 
