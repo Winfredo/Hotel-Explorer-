@@ -1,18 +1,31 @@
 import {
     createBrowserRouter,
   } from "react-router-dom";
+  // eslint-disable-next-line
 import App from "../App";
-import HeroSection from "../components/HeroSection/HeroSection";
-
+import Home from "../components/pages/Home"; 
+import Services from "../components/pages/Services";
+import Products from "../components/pages/Products";
+import SignUp from "../components/pages/SignUp";
+import Error from "../components/pages/Error/Error"
 
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
+      element: <Home  />,
+      errorElement: <Error />
     },
     {
-      path: "/herosection",
-      element: <HeroSection />
+      path: "/services",
+      element: <Services />
+    },
+    {
+      path: "/products",
+      element: <Products />
+    },
+    {
+      path: "/sign-up",
+      element: <SignUp />
     }
    
   ]);
