@@ -13,7 +13,7 @@ const Cards = () => {
               src="pictures/img-9.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="Adventure"
-              path="/services"
+              path="/adventure"
             />
 
             <CardItem
@@ -28,7 +28,7 @@ const Cards = () => {
               src="pictures/img-4.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="Mystery"
-              path="/services"
+              path="/mystery"
             />
 
             <CardItem
