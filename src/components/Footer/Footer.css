@@ -54,6 +54,7 @@
   
   .footer-link-wrapper {
     display: flex;
+   
   }
   
   .footer-link-items {
@@ -64,6 +65,7 @@
     text-align: left;
     width: 160px;
     box-sizing: border-box;
+    height: 12rem;
   }
   
   .footer-link-items h2 {
@@ -169,4 +171,8 @@
         padding: 10px;
         width: 100%;
         }
+        .footer-link-items socials{
+          padding-bottom: 30px;
+        }
+       
     }
