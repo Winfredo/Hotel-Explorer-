@@ -13,8 +13,9 @@ function App() {
   return (
 
    <div>
-  <Navbar />
-  <HeroSection />
+      <Navbar />
+      <HeroSection />
+
    </div>
   );    
 
